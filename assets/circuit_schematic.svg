@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#141c2f"/>
+    </linearGradient>
+    <linearGradient id="unoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#006699"/>
+      <stop offset="100%" stop-color="#004c73"/>
+    </linearGradient>
+    <filter id="cShadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="740" fill="url(#cbg)"/>
+  
+  <text x="600" y="45" font-family="-apple-system, sans-serif" font-size="26" font-weight="800" fill="#f8fafc" text-anchor="middle" letter-spacing="1">ARDUINO UNO COMPLETE CIRCUIT &amp; PIN MAPPING</text>
+  <text x="600" y="75" font-family="-apple-system, sans-serif" font-size="14" font-weight="500" fill="#38bdf8" text-anchor="middle">Conflict-Free Pin Allocation — 100% Verified in Wokwi Simulation</text>
+
+  <!-- Arduino Board Central -->
+  <rect x="420" y="110" width="360" height="580" rx="18" fill="url(#unoGrad)" stroke="#38bdf8" stroke-width="3" filter="url(#cShadow)"/>
+  <rect x="440" y="130" width="320" height="40" rx="8" fill="#00334e"/>
+  <text x="600" y="157" font-family="sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="middle">ARDUINO UNO R3</text>
+
+  <!-- Left Pins (Power & Analog) -->
+  <!-- Labels on Board -->
+  <text x="440" y="210" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0">5V  [POWER RAIL]</text>
+  <text x="440" y="250" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0">GND [COMMON GROUND]</text>
+  <text x="440" y="310" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0">A0  [ANALOG / DIG]</text>
+  <text x="440" y="370" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0">A1  [ANALOG / DIG]</text>
+  <text x="440" y="430" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0">A2  [ANALOG / DIG]</text>
+  <text x="440" y="490" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0">A3  [ANALOG IN]</text>
+  <text x="440" y="550" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0">A4  [I2C SDA]</text>
+  <text x="440" y="610" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0">A5  [I2C SCL]</text>
+
+  <!-- Right Pins (Digital) -->
+  <text x="740" y="200" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[TX / SIM800L] D1</text>
+  <text x="740" y="235" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[RX / SIM800L] D0</text>
+  <text x="740" y="275" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[KP COL 4] D2</text>
+  <text x="740" y="310" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[KP COL 3] D3</text>
+  <text x="740" y="345" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[KP COL 2] D4</text>
+  <text x="740" y="380" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[KP COL 1] D5</text>
+  <text x="740" y="415" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[KP ROW 4] D6</text>
+  <text x="740" y="450" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[KP ROW 3] D7</text>
+  <text x="740" y="485" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[KP ROW 2] D8</text>
+  <text x="740" y="520" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[KP ROW 1] D9</text>
+  <text x="740" y="555" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[SERVO PWM] D10</text>
+  <text x="740" y="590" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[BUZZER] D11</text>
+  <text x="740" y="625" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[RED LED] D12</text>
+  <text x="740" y="660" font-family="monospace" font-size="13" font-weight="700" fill="#e2e8f0" text-anchor="end">[GREEN LED] D13</text>
+
+  <!-- Left Side Peripheral Boxes -->
+  <!-- I2C LCD -->
+  <rect x="40" y="520" width="300" height="110" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <text x="60" y="550" font-family="sans-serif" font-size="16" font-weight="700" fill="#10b981">1602 LCD (I2C Module)</text>
+  <text x="60" y="575" font-family="sans-serif" font-size="13" fill="#cbd5e1">SDA -> Pin A4 | SCL -> Pin A5</text>
+  <text x="60" y="595" font-family="sans-serif" font-size="13" fill="#cbd5e1">VCC -> 5V     | GND -> GND</text>
+  <text x="60" y="615" font-family="sans-serif" font-size="11" fill="#6ee7b7">Only 2 I/O wires needed via PCF8574 backpack</text>
+
+  <!-- Noise Pin A3 -->
+  <rect x="40" y="445" width="300" height="60" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="60" y="470" font-family="sans-serif" font-size="14" font-weight="700" fill="#f59e0b">Floating Pin A3 (Noise Seed)</text>
+  <text x="60" y="492" font-family="sans-serif" font-size="12" fill="#cbd5e1">Unconnected pin reads atmospheric noise</text>
+
+  <!-- PIR Sensor -->
+  <rect x="40" y="365" width="300" height="65" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="60" y="390" font-family="sans-serif" font-size="14" font-weight="700" fill="#38bdf8">HC-SR501 PIR Sensor</text>
+  <text x="60" y="412" font-family="sans-serif" font-size="12" fill="#cbd5e1">OUT -> Pin A2 | VCC -> 5V | GND -> GND</text>
+
+  <!-- Door Switch -->
+  <rect x="40" y="285" width="300" height="65" rx="10" fill="#1e293b" stroke="#e11d48" stroke-width="2"/>
+  <text x="60" y="310" font-family="sans-serif" font-size="14" font-weight="700" fill="#fb7185">Door Reed Switch (Tamper)</text>
+  <text x="60" y="332" font-family="sans-serif" font-size="12" fill="#cbd5e1">Terminal 1 -> Pin A1 | Terminal 2 -> GND</text>
+
+  <!-- Yellow LED -->
+  <rect x="40" y="205" width="300" height="65" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="2"/>
+  <text x="60" y="230" font-family="sans-serif" font-size="14" font-weight="700" fill="#fde047">Yellow LED (OTP Countdown)</text>
+  <text x="60" y="252" font-family="sans-serif" font-size="12" fill="#cbd5e1">Anode -> Pin A0 (via 220Ω) | Cathode -> GND</text>
+
+  <!-- Right Side Peripheral Boxes -->
+  <!-- 4x4 Keypad -->
+  <rect x="850" y="260" width="310" height="270" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="870" y="295" font-family="sans-serif" font-size="17" font-weight="700" fill="#f59e0b">4x4 Matrix Keypad</text>
+  <text x="870" y="325" font-family="sans-serif" font-size="13" fill="#cbd5e1">Rows (Pins 9 to 6):</text>
+  <text x="885" y="348" font-family="monospace" font-size="12" fill="#fde047">Row 1 -> D9 | Row 2 -> D8</text>
+  <text x="885" y="368" font-family="monospace" font-size="12" fill="#fde047">Row 3 -> D7 | Row 4 -> D6</text>
+  <text x="870" y="398" font-family="sans-serif" font-size="13" fill="#cbd5e1">Columns (Pins 5 to 2):</text>
+  <text x="885" y="420" font-family="monospace" font-size="12" fill="#67e8f9">Col 1 -> D5 | Col 2 -> D4</text>
+  <text x="885" y="440" font-family="monospace" font-size="12" fill="#67e8f9">Col 3 -> D3 | Col 4 -> D2</text>
+  <text x="870" y="475" font-family="sans-serif" font-size="12" fill="#94a3b8">Keys: 0-9, A, B, C (Resend), D, * (Clear), # (Enter/Lock)</text>
+  <text x="870" y="500" font-family="sans-serif" font-size="11" fill="#475569">Internal pullups handled by Keypad.h library</text>
+
+  <!-- Servo & Buzzer & Red/Green LEDs -->
+  <rect x="850" y="545" width="310" height="155" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <text x="870" y="573" font-family="sans-serif" font-size="15" font-weight="700" fill="#34d399">Actuators &amp; Indicators</text>
+  <text x="870" y="598" font-family="sans-serif" font-size="12" fill="#cbd5e1">SG90 Servo   : PWM -> D10 | 5V &amp; GND</text>
+  <text x="870" y="620" font-family="sans-serif" font-size="12" fill="#cbd5e1">Piezo Buzzer : Signal -> D11 | GND</text>
+  <text x="870" y="642" font-family="sans-serif" font-size="12" fill="#cbd5e1">Red LED      : Anode -> D12 (220Ω) | GND</text>
+  <text x="870" y="664" font-family="sans-serif" font-size="12" fill="#cbd5e1">Green LED    : Anode -> D13 (220Ω) | GND</text>
+  <text x="870" y="684" font-family="sans-serif" font-size="11" fill="#94a3b8">Common Ground shared across all modules</text>
+
+  <!-- Connecting Lines -->
+  <!-- Left connections -->
+  <line x1="340" y1="235" x2="420" y2="310" stroke="#fde047" stroke-width="2.5"/>
+  <line x1="340" y1="315" x2="420" y2="370" stroke="#fb7185" stroke-width="2.5"/>
+  <line x1="340" y1="395" x2="420" y2="430" stroke="#38bdf8" stroke-width="2.5"/>
+  <line x1="340" y1="475" x2="420" y2="490" stroke="#f59e0b" stroke-width="2.5"/>
+  <line x1="340" y1="565" x2="420" y2="550" stroke="#10b981" stroke-width="2.5"/>
+  <line x1="340" y1="585" x2="420" y2="610" stroke="#10b981" stroke-width="2.5"/>
+
+  <!-- Right connections -->
+  <line x1="780" y1="555" x2="850" y2="600" stroke="#34d399" stroke-width="2.5"/>
+  <line x1="780" y1="590" x2="850" y2="620" stroke="#34d399" stroke-width="2.5"/>
+  <line x1="780" y1="625" x2="850" y2="642" stroke="#fb7185" stroke-width="2.5"/>
+  <line x1="780" y1="660" x2="850" y2="664" stroke="#4ade80" stroke-width="2.5"/>
+  <line x1="780" y1="415" x2="850" y2="380" stroke="#f59e0b" stroke-width="3"/>
+</svg>

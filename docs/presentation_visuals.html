@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Locker Security System — High-Resolution Presentation Graphics</title>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #131b2e;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #1e293b;
+    }
+    body {
+      margin: 0;
+      padding: 30px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 25px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin: 0 0 10px 0;
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      font-size: 16px;
+      color: var(--muted);
+      margin: 0;
+    }
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    .card-header {
+      padding: 20px 25px;
+      background: #182238;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .card-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #f1f5f9;
+    }
+    .card-tag {
+      font-size: 13px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+    .card-body {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card-body img, .card-body svg {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+    .caption {
+      margin-top: 15px;
+      font-size: 14px;
+      color: var(--muted);
+      text-align: center;
+      max-width: 900px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Smart Locker Security System — Presentation Visuals</h1>
+      <p class="subtitle">High-resolution, full-color diagrams and photorealistic render for Slide Decks &amp; Project Review</p>
+    </header>
+
+    <div class="grid">
+      <!-- 1. Realistic Product Render -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">1. System Hardware &amp; Vault Prototype Render</div>
+          <div class="card-tag">For Slide 1 (Title) &amp; Slide 5 (Hardware)</div>
+        </div>
+        <div class="card-body">
+          <img src="iot_smart_locker_security_system_1792059723870.jpg" alt="Smart Locker Security System Prototype">
+          <div class="caption">
+            Photorealistic showcase of the Arduino Uno-based smart locker mounted on a brushed metal vault door with glowing 16x2 LCD, 4x4 matrix keypad, SG90 servo deadbolt latch, tri-color status LEDs, piezo buzzer, PIR sensor, and magnetic door reed switch.
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. System Architecture -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">2. System Architecture &amp; Subsystem Hierarchy</div>
+          <div class="card-tag">For Slide 4 (Architecture)</div>
+        </div>
+        <div class="card-body">
+          <img src="smart_locker_architecture.svg" alt="System Architecture Diagram">
+          <div class="caption">
+            Color-coded architectural block diagram displaying input sensors (Amber), ATmega328P central processing and firmware submodules (Cyan), output actuators &amp; indicators (Emerald Green), and GSM communication telemetry (Purple).
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Circuit & Pin Mapping -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">3. Complete Arduino Circuit Schematic &amp; Pin Mapping</div>
+          <div class="card-tag">For Slide 8 (Circuit Design)</div>
+        </div>
+        <div class="card-body">
+          <img src="smart_locker_circuit_schematic.svg" alt="Circuit Pin Mapping">
+          <div class="caption">
+            Complete conflict-free pin distribution diagram showing precise wiring for the 4x4 keypad (Pins 2-9), LCD I2C backpack (A4/A5), SG90 servo (D10), Buzzer (D11), LEDs (D12, D13, A0), and sensors (A1, A2, A3).
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Operational Flowchart -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">4. Operational Security &amp; Authentication Flowchart</div>
+          <div class="card-tag">For Slide 6 (Working Principle)</div>
+        </div>
+        <div class="card-body">
+          <img src="smart_locker_flowchart.svg" alt="Operational Flowchart">
+          <div class="caption">
+            State-machine flowchart illustrating two-factor OTP verification, timeout expiry, manual relocking with '#', the 2-minute left-open warning, and the silent 9999# duress robbery alarm branch.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

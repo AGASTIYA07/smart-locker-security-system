@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 950" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#151e33"/>
+    </linearGradient>
+    <filter id="fShadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <marker id="fArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="alertArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <rect width="1100" height="950" fill="url(#fbg)"/>
+
+  <!-- Title -->
+  <text x="550" y="40" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" fill="#f8fafc" text-anchor="middle" letter-spacing="1">SMART LOCKER OPERATIONAL WORKFLOW</text>
+  <text x="550" y="68" font-family="-apple-system, sans-serif" font-size="13" font-weight="500" fill="#94a3b8" text-anchor="middle">Authentication Pipeline, Dynamic OTP Generation &amp; Silent Coercion Dispatch</text>
+
+  <!-- Start Capsule -->
+  <rect x="425" y="95" width="250" height="45" rx="22.5" fill="#0284c7" stroke="#38bdf8" stroke-width="2" filter="url(#fShadow)"/>
+  <text x="550" y="123" font-family="sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">SYSTEM BOOT &amp; INIT</text>
+
+  <line x1="550" y1="140" x2="550" y2="175" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#fArrow)"/>
+
+  <!-- State 1: Idle -->
+  <rect x="400" y="175" width="300" height="55" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1.5" filter="url(#fShadow)"/>
+  <text x="550" y="198" font-family="sans-serif" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="middle">IDLE: "ENTER PASSWORD:"</text>
+  <text x="550" y="217" font-family="sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Servo 0° (Locked) | Red LED ON</text>
+
+  <line x1="550" y1="230" x2="550" y2="265" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#fArrow)"/>
+
+  <!-- Input Step -->
+  <rect x="410" y="265" width="280" height="45" rx="8" fill="#334155" stroke="#64748b" stroke-width="1"/>
+  <text x="550" y="293" font-family="sans-serif" font-size="13" font-weight="600" fill="#f1f5f9" text-anchor="middle">User Enters PIN + '#' on Keypad</text>
+
+  <line x1="550" y1="310" x2="550" y2="345" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#fArrow)"/>
+
+  <!-- Diamond 1: Duress Check -->
+  <polygon points="550,345 680,395 550,445 420,395" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#fShadow)"/>
+  <text x="550" y="392" font-family="sans-serif" font-size="13" font-weight="700" fill="#f59e0b" text-anchor="middle">Is PIN == 9999# ?</text>
+  <text x="550" y="408" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">(Duress / Robbery)</text>
+
+  <!-- Duress YES Branch (Right) -->
+  <line x1="680" y1="395" x2="820" y2="395" stroke="#ef4444" stroke-width="2.5" marker-end="url(#alertArrow)"/>
+  <text x="740" y="385" font-family="sans-serif" font-size="12" font-weight="700" fill="#ef4444">YES</text>
+
+  <rect x="820" y="355" width="240" height="80" rx="10" fill="#450a0a" stroke="#ef4444" stroke-width="2" filter="url(#fShadow)"/>
+  <text x="940" y="380" font-family="sans-serif" font-size="13" font-weight="800" fill="#fca5a5" text-anchor="middle">SILENT POLICE ALERT</text>
+  <text x="940" y="400" font-family="sans-serif" font-size="11" fill="#fecaca" text-anchor="middle">1. Unlock Locker (Keep victim safe)</text>
+  <text x="940" y="418" font-family="sans-serif" font-size="11" fill="#fecaca" text-anchor="middle">2. Silent GSM telemetry dispatch</text>
+
+  <!-- Duress NO Branch (Down) -->
+  <line x1="550" y1="445" x2="550" y2="480" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#fArrow)"/>
+  <text x="565" y="465" font-family="sans-serif" font-size="12" font-weight="700" fill="#38bdf8">NO</text>
+
+  <!-- Diamond 2: Master Password Check -->
+  <polygon points="550,480 680,530 550,580 420,530" fill="#1e293b" stroke="#38bdf8" stroke-width="2" filter="url(#fShadow)"/>
+  <text x="550" y="527" font-family="sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle">PIN == Master PIN?</text>
+  <text x="550" y="543" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">(Stored in EEPROM)</text>
+
+  <!-- Wrong Password (Left) -->
+  <line x1="420" y1="530" x2="280" y2="530" stroke="#ef4444" stroke-width="2.5" marker-end="url(#alertArrow)"/>
+  <text x="340" y="520" font-family="sans-serif" font-size="12" font-weight="700" fill="#ef4444">NO</text>
+
+  <rect x="60" y="495" width="220" height="70" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+  <text x="170" y="522" font-family="sans-serif" font-size="13" font-weight="700" fill="#f87171" text-anchor="middle">Increment Fail Counter</text>
+  <text x="170" y="542" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">3 Fails -> 30s Lockout Penalty</text>
+
+  <path d="M 60 530 L 30 530 L 30 202 L 400 202" stroke="#ef4444" stroke-width="2" fill="none" stroke-dasharray="4,4" marker-end="url(#fArrow)"/>
+
+  <!-- Correct Password (Down) -->
+  <line x1="550" y1="580" x2="550" y2="615" stroke="#10b981" stroke-width="2.5" marker-end="url(#fArrow)"/>
+  <text x="565" y="600" font-family="sans-serif" font-size="12" font-weight="700" fill="#10b981">YES</text>
+
+  <!-- Generate OTP -->
+  <rect x="390" y="615" width="320" height="65" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#fShadow)"/>
+  <text x="550" y="640" font-family="sans-serif" font-size="14" font-weight="700" fill="#f59e0b" text-anchor="middle">GENERATE DYNAMIC 4-DIGIT OTP</text>
+  <text x="550" y="660" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Entropy from A3 | Valid 60s | Sent to User Phone</text>
+
+  <line x1="550" y1="680" x2="550" y2="715" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#fArrow)"/>
+
+  <!-- Diamond 3: OTP Check -->
+  <polygon points="550,715 680,765 550,815 420,765" fill="#1e293b" stroke="#10b981" stroke-width="2" filter="url(#fShadow)"/>
+  <text x="550" y="760" font-family="sans-serif" font-size="13" font-weight="700" fill="#10b981" text-anchor="middle">OTP Valid &amp; Correct?</text>
+  <text x="550" y="777" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">(&lt; 60 seconds)</text>
+
+  <!-- OTP Success (Down) -->
+  <line x1="550" y1="815" x2="550" y2="850" stroke="#10b981" stroke-width="2.5" marker-end="url(#fArrow)"/>
+  <text x="565" y="835" font-family="sans-serif" font-size="12" font-weight="700" fill="#10b981">YES</text>
+
+  <!-- Unlocked State -->
+  <rect x="380" y="850" width="340" height="70" rx="12" fill="#064e3b" stroke="#10b981" stroke-width="2.5" filter="url(#fShadow)"/>
+  <text x="550" y="877" font-family="sans-serif" font-size="15" font-weight="800" fill="#6ee7b7" text-anchor="middle">LOCKER OPEN (ACCESS GRANTED)</text>
+  <text x="550" y="897" font-family="sans-serif" font-size="12" fill="#a7f3d0" text-anchor="middle">Servo -> 90° | Green LED ON | 2-Min Timer Active</text>
+  <text x="550" y="911" font-family="sans-serif" font-size="10" fill="#d1fae5" text-anchor="middle">Press '#' to secure | Alarm if open &gt; 2 minutes</text>
+
+  <!-- OTP Fail (Right) -->
+  <line x1="680" y1="765" x2="790" y2="765" stroke="#ef4444" stroke-width="2" marker-end="url(#alertArrow)"/>
+  <text x="720" y="755" font-family="sans-serif" font-size="12" font-weight="700" fill="#ef4444">NO / EXP</text>
+  <rect x="790" y="740" width="180" height="50" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="880" y="763" font-family="sans-serif" font-size="12" font-weight="700" fill="#f87171" text-anchor="middle">OTP Expired / Failed</text>
+  <text x="880" y="779" font-family="sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Return to Lock Screen</text>
+
+  <path d="M 970 765 L 1020 765 L 1020 202 L 700 202" stroke="#ef4444" stroke-width="2" fill="none" stroke-dasharray="4,4" marker-end="url(#fArrow)"/>
+</svg>

@@ -1,0 +1,16 @@
+# macOS metadata
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Arduino IDE build outputs
+build/
+*.hex
+*.elf
+*.bin
+
+# Temporary files
+*.tmp
+*.bak
+*~
