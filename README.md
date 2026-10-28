@@ -173,7 +173,7 @@ Special thanks to the team members who designed, built, and contributed to this 
 | **Agastiya** | Embedded Systems & Firmware Lead | [@AGASTIYA07](https://github.com/AGASTIYA07) |
 | **A. S. K. Nayanida** | Security Architecture & Validation | [@Nayanida11](https://github.com/Nayanida11) |
 | **Shanjana Venkateshwaran** | Hardware Design & Research | [Shanjana V](https://github.com/Shanjana-V) |
-| **Adwaith V** | Circuit Integration & Documentation | — |
+| **Adwaith V** | Circuit Integration & Documentation | [@adwaith7790](https://github.com/adwaith7790) |
 
 ---
 
