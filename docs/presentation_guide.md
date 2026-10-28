@@ -30,7 +30,7 @@ A complete, slide-by-slide presentation deck designed for academic project revie
 
 * **Title:** IoT-Enabled Smart Locker Security System with Two-Factor Dynamic OTP & Silent Robbery Alarm
 * **Subtitle:** An Embedded Dual-Layer Electronic Vault Architecture using Arduino
-* **Presented by:** [Your Name / Team Members]
+* **Presented by:** Agastiya, A. S. K. Nayanida, Shanjana Venkateshwaran, Adwaith V
 * **Department:** Department of Electronics & Communication / Computer Science Engineering
 * **Institution:** [Your College / University Name]
 * **Academic Year / Semester:** 2026 – 2027
